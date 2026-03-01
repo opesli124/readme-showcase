@@ -104,6 +104,14 @@ export default function Home() {
     }
   };
 
+  const shareToTwitter = () => {
+    const shareUrl = getShareUrl();
+    if (!shareUrl) return;
+    const text = encodeURIComponent(`Check out this tool! Turn any GitHub README into a beautiful webpage 🚀`);
+    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${text}`;
+    window.open(twitterUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Header */}
@@ -163,6 +171,12 @@ export default function Home() {
               </h2>
               <div className="flex gap-2">
                 <button
+                  onClick={shareToTwitter}
+                  className="px-4 py-2 text-sm bg-[#1DA1F2] text-white rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  🐦 Share
+                </button>
+                <button
                   onClick={copyShareUrl}
                   className="px-4 py-2 text-sm bg-[var(--card-bg)] border border-[var(--border)] rounded-lg hover:bg-[var(--border)] transition-colors"
                 >
@@ -194,7 +208,15 @@ export default function Home() {
         {!loading && !repoInfo && !error && (
           <div className="text-center py-16 text-gray-500">
             <p className="text-lg mb-2">Enter a GitHub repository to showcase its README</p>
-            <p className="text-sm">Example: vercel/next.js</p>
+            <p className="text-sm mb-6">Example: vercel/next.js</p>
+            <a
+              href="https://twitter.com/intent/tweet?text=I+just+found+this+awesome+tool:+Turn+any+GitHub+README+into+a+beautiful+webpage+🚀+https://opesli124.github.io/readme-showcase/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 bg-[#1DA1F2] text-white rounded-lg hover:opacity-90 transition-opacity font-medium"
+            >
+              🐦 Share on Twitter
+            </a>
           </div>
         )}
       </main>
