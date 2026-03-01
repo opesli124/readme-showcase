@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# README Showcase
 
-## Getting Started
+Transform any GitHub README into a beautiful, shareable webpage in seconds.
 
-First, run the development server:
+## ✨ Features
+
+- **Instant Transform** - Enter any GitHub repo (e.g., `facebook/react`) and get an instant showcase page
+- **No Login Required** - Just enter the repo name, no account needed
+- **Dark/Light Theme** - Toggle between themes with a single click
+- **Shareable Links** - Generate unique URLs to share specific repos
+- **100% Free** - No收费, no limits
+
+## 🚀 Demo
+
+Try it now: [https://opesli124.github.io/readme-showcase/](https://opesli124.github.io/readme-showcase/)
+
+### Example Repos
+
+- [vercel/next.js](https://opesli124.github.io/readme-showcase/?repo=vercel/next.js)
+- [facebook/react](https://opesli124.github.io/readme-showcase/?repo=facebook/react)
+- [tensorflow/tensorflow](https://opesli124.github.io/readme-showcase/?repo=tensorflow/tensorflow)
+
+## 📖 Usage
+
+1. Visit [https://opesli124.github.io/readme-showcase/](https://opesli124.github.io/readme-showcase/)
+2. Enter a GitHub repository name (e.g., `owner/repo`)
+3. Click "Generate"
+4. Share the link or copy it
+
+## 💡 Use Cases
+
+- Share projects on your resume
+- Quick demo for recruiters
+- Social media project previews
+- Documentation alternative
+- Portfolio enhancement
+
+## 🔧 Tech Stack
+
+- Next.js 16
+- React 19
+- Tailwind CSS v4
+- GitHub API
+
+## 📦 Deploy
+
+This project is deployed on GitHub Pages. To run locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 License
 
-## Learn More
+MIT License
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ for developers
